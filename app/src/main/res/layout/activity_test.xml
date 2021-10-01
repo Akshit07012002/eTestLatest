@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/main_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TestActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="304dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="28dp"
+        android:background="@color/one"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:titleMarginTop="10dp"
+        app:titleTextAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:titleTextColor="@color/two">
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/test_recycler_view"
+        android:layout_width="411dp"
+        android:layout_height="598dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:layout_constraintVertical_bias="1.0">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
